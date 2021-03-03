@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='styles.css' rel='stylesheet'/>
+  <title>Pomodoro Timer</title>
+</head>
+<body>
+  <audio id="audio" src="softchime.mp3" preload="auto"></audio>
+
+    <header class='center width-lg stack-sm'>
+      <div></div>
+      <h1>Saki's Pomodoro Timer</h1>
+    </header>
+    <div id='body'></div>
+    <main class='center' id="main">
+      <div class="buttons stack-sm">
+        <div class='row'>
+          <button id='customise'>customise</button>
+          <button id='what'>what is a pomodoro timer?</button>
+        </div>
+        <div class='timer-times center row'>
+          <button id='pomodoro'>pomodoro</button>
+          <button id='shortb'>short break</button>
+          <button id='longb'>long break</button>
+        </div>
+      <div class='timer center'>
+        <img class='tomato-img center' id='tmt-img' src='images/941.png'alt='image-of-tomato'>
+        <div class='timer-time center'><span id='minscss'>25</span><span>:</span><span id='secscss'>00</span></div>
+        <div class='timer-buttons width-lg'>
+          <button id='startb' class='start-stop-button center'><p>start</p></button>
+          <button id='restartb' class='replay center'><p>restart</p></button>
+        </div>
+      </div>
+    
+  </main>
+  
+
+  <script src='script.js'></script>
+</body>
+</html>
